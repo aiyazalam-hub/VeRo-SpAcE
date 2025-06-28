@@ -826,6 +826,16 @@ footer{
   }
 }
 @media screen and (max-width: 490px){
+
+
+
+
+      .test-div {
+        height: 190px;
+        padding: 10px 25px 10px 25px;
+        border: 0.5px solid gainsboro;
+        border-radius: 20px;
+    }
   .col-33{
     width: 100%;
     
@@ -836,12 +846,7 @@ footer{
 }
   /* testimonila */
     /* testimonila */
-  .test-div {
-    height:100px ;
-       padding: 10px 25px 10px 25px;
-    border: 0.5px solid gainsboro;
-    border-radius: 20px;
-}
+  
  .test-div > p {
     text-align: none;
     font-size: 10px;
