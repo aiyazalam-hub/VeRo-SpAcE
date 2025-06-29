@@ -616,15 +616,14 @@ Properties section .pro-sec {
 .ccard {
   position: relative;
 }
- .ccard>img{
-      
-      filter: blur(5px);
-      transition: filter 0.5s ease;
-    }
+.ccard > img {
+  filter: blur(5px);
+  transition: filter 0.5s ease;
+}
 
-    .ccard>img:hover {
-      filter: blur(0);
-    }
+.ccard > img:hover {
+  filter: blur(0);
+}
 .call {
   max-width: 265px;
   height: 70px;
@@ -644,12 +643,10 @@ Properties section .pro-sec {
   color: white;
 }
 .call {
-   
   transition: background-color 0.3s ease;
 }
 
 .call:hover {
-  
   background-color: #0d0341;
 }
 .call > img {
@@ -737,90 +734,164 @@ footer {
   color: white;
 }
 /* <!-- GET IN TOUCH SECTION --> */
-.col-40{
+.col-40 {
   width: 40%;
   padding: 0 15px;
 }
-.col-60{
+.col-60 {
   width: 60%;
+  background-color: rgba(247, 248, 250, 1);
+  border-radius: 40px;
   padding: 0 15px;
 }
-.touch-sec{
+.touch-sec {
   padding-top: 89px;
 }
-.submit-sec{
+.submit-sec {
   /* max-width:725px ;
   height: 526px; */
   /* border-radius:40px ;
   background-color: rgba(247, 248, 250, 1); */
 }
-.touch1{
+.touch1 {
   font-size: 48px;
+  margin-top: 18px;
+  margin-bottom: 16px;
 }
-.submit-sec{
+.touchp {
+  font-size: 18px;
+  color: rgba(102, 102, 102, 1);
+  margin-bottom: 30px;
+}
+.add1 {
+  display: flex;
+  gap: 27px;
+  margin-bottom: 34px;
+}
+.add > h3 {
+  font-size: 18px;
+  color: rgba(51, 51, 51, 1);
+  margin-bottom: 7px;
+}
+.add > h3 > p {
+  font-size: 14px;
+  color: rgba(102, 102, 102, 1);
+}
+.submit-sec {
   /* padding-top: 33px;
   padding-left: 46px; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.name{
+.name {
   padding-top: 33px;
 }
-.name>h5{
+.name > h5 {
   margin-bottom: 12px;
- font-weight: 500;
+  font-weight: 500;
   font-size: 20px;
   color: rgba(51, 51, 51, 1);
 }
-.name1>h5{
-   margin-bottom: 12px;
-   margin-top: 25px;
- font-weight: 500;
+.name1 > h5 {
+  margin-bottom: 12px;
+  margin-top: 25px;
+  font-weight: 500;
   font-size: 20px;
 }
-.name1>input{
-  max-width:633px ;
+.name1 > input {
+  max-width: 633px;
   padding-inline: 22px 557px;
   padding-block: 14px 91px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 20px;
   background-color: white;
   border-radius: 25px;
   border: none;
 }
-.name>input{
+.name > input {
   max-width: 305px;
   padding-block: 15px 15px;
   padding-inline: 20px 217px;
   border-radius: 60px;
-  color: gray
-  ;
+  color: gray;
   border: none;
-   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 20px;
   background-color: white;
 }
-.submit-btn{
+.submit-btn {
   text-align: center;
   margin-top: 23px;
 }
- .submit-btn>a {
-     padding: 12px 23px;
-     font-size: 20px;
-     border-radius: 60px;
-      color: white;
-      background: rgba(84, 58, 215, 1);
-      border: none;
-      
-      cursor: pointer;
-      transition: all 0.4s ease;
-      position: relative;
-    }
+.submit-btn > a {
+  padding: 12px 23px;
+  font-size: 20px;
+  border-radius: 60px;
+  color: white;
+  background: rgba(84, 58, 215, 1);
+  border: none;
 
-    .submit-btn>a:hover {
-      transform: translateX(10px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-      background-color: #0056b3;
-    }
+  cursor: pointer;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.submit-btn > a:hover {
+  transform: translateX(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  background-color: #0056b3;
+}
+.tt{
+  text-align: center;
+}
+
+.faq-container {
+  max-width: 700px;
+  margin: auto;
+  padding-top: 80px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 15px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  background: #f9f9f9;
+  padding: 0 15px;
+  font-size: 14px;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px; /* enough for visible answer */
+  padding: 15px;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .arrow {
+  transform: rotate(180deg);
+}
 /* ==contact-us== */
 .ccard {
   text-align: center;
@@ -851,6 +922,17 @@ footer {
     width: 100%;
     text-align: center;
     margin-top: 10px;
+  }
+
+  .col-60 {
+    width: 100%;
+  }
+  .col-40{
+    width: 100%;
+   
+  }
+  .touch-sec, .tt{
+    text-align: center;
   }
 }
 @media screen and (max-width: 992px) {
@@ -900,6 +982,12 @@ footer {
   }
 }
 @media screen and (max-width: 768px) {
+  .name1 > input {
+    max-width: 633px;
+    padding-inline: 22px 357px;
+    padding-block: 14px 91px;
+    
+}
   .call {
     margin-inline: 45px;
     margin-top: 260px;
@@ -928,6 +1016,14 @@ footer {
   }
 }
 @media screen and (max-width: 567px) {
+      .banner-sec1 {
+        min-height: 30vh;
+    }
+      .name1 > input {
+        max-width: 633px;
+        padding-inline: 22px 257px;
+        padding-block: 14px 91px;
+    }
   .ccard {
     text-align: center;
     margin-top: 41px;
@@ -993,8 +1089,16 @@ footer {
   .cmn-gap {
     padding: 50px 0;
   }
+  .name {
+    padding-top: 3px;
+}
 }
 @media screen and (max-width: 490px) {
+      .name1 > input {
+        max-width: 633px;
+        padding-inline: 22px 117px;
+        padding-block: 14px 91px;
+    }
   .call {
     margin-inline: 20px;
     margin-top: 260px;
